@@ -17,7 +17,7 @@ try:
     lr = stick.get_axis(0)
     motorL = int((-fb+lr)*250)
     motorR = int((-fb-lr)*250)
-    motorV = stick.get_axis(4)*-250
+    motorV = int(stick.get_axis(4)*-250)
     print ({motorL, motorR, motorV, lights})
     time.sleep(0.09)
 except KeyboardInterrupt:
